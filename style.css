@@ -11,7 +11,7 @@ body {
 
 .container {
     background-color: #2a0a51;
-    color: #fff;
+    color: rgb(255, 255, 255);
     padding: 80px; /* Reduced padding for better fit */
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -32,6 +32,30 @@ input {
     margin-right: 5px; /* Space between input and button */
 }
 
+/* Kotak input utama */
+input[type="text"] {
+    width: 200px; /* Tentukan lebar tetap untuk input */
+    height: 30px; /* Tentukan tinggi awal */
+    max-width: 200px; /* Membatasi lebar maksimum */
+    resize: vertical; /* Izinkan perubahan ukuran hanya ke atas/bawah */
+    overflow-y: auto; /* Scroll jika teks terlalu panjang */
+    padding: 10px;
+    border: 1px solid #2fff00;
+    border-radius: 5px;
+    box-sizing: border-box; /* Agar padding tidak menambah ukuran total */
+}
+
+/* Kotak input saat mengedit */
+li input[type="text"] {
+    width: 200px; /* Lebar tetap saat mengedit */
+    height: 30px; /* Tinggi default */
+    max-width: 200px; /* Batasi lebar */
+    resize: vertical; /* Izinkan perubahan ukuran hanya ke bawah */
+    overflow-y: auto; /* Scroll jika teks terlalu panjang */
+    padding: 5px;
+}
+
+
 button {
     padding: 10px 15px;
     background-color: #28a745;
@@ -51,7 +75,7 @@ ul {
 }
 
 li {
-    background-color: #f3f3f3;
+    background-color: #2a0a80;
     padding: 10px;
     margin: 5px 0;
     border-radius: 5px;
