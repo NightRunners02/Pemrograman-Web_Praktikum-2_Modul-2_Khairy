@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
     background-image: url('purple-aesthetic-rain.gif');
     background-size: cover;
     background-position: center;
@@ -11,7 +10,8 @@ body {
 }
 
 .container {
-    background-color: rgb(221, 0, 255);
+    background-color: #2a0a51;
+    color: #fff;
     padding: 80px; /* Reduced padding for better fit */
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
